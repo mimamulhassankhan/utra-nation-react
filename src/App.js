@@ -1,37 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Country from './components/country/Country'
+import Cart from './components/Cart/Cart';
 
 function App() {
   const [countries, setCountries] = useState([]);
+  const [countryList, pushCountryList] = useState([]);
 
   useEffect(() => {
     fetch('https://restcountries.eu/rest/v2/all')
     .then(res => res.json())
     .then(data => setCountries(data));
-  },[])
+  },[]);
+
+  const addCountryToList = (country) => {
+    const newCountryList = [...countryList, country];
+    pushCountryList(newCountryList);
+  };
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Data Loaded : {countries.length}</h1>
+        <h3>Country Added: {countryList.length}</h3>
+        <Cart countryList={countryList}/>
         <ul>
           {
-            countries.map(country => <li>{country.name}</li>)
+            countries.map(singleCountry => <Country clickHandler={addCountryToList} country={singleCountry}  key={singleCountry.alpha3Code}></Country>)
           }
         </ul>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
