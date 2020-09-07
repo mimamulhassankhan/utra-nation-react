@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/utra-nation-react/static/css/main.5f361e03.chunk.css",
+    "main.js": "/utra-nation-react/static/js/main.3b5aa576.chunk.js",
+    "main.js.map": "/utra-nation-react/static/js/main.3b5aa576.chunk.js.map",
+    "runtime-main.js": "/utra-nation-react/static/js/runtime-main.114cf7b8.js",
+    "runtime-main.js.map": "/utra-nation-react/static/js/runtime-main.114cf7b8.js.map",
+    "static/js/2.b1b3f7f4.chunk.js": "/utra-nation-react/static/js/2.b1b3f7f4.chunk.js",
+    "static/js/2.b1b3f7f4.chunk.js.map": "/utra-nation-react/static/js/2.b1b3f7f4.chunk.js.map",
+    "index.html": "/utra-nation-react/index.html",
+    "precache-manifest.0000be2fea79dc5279cc0f198318a0c7.js": "/utra-nation-react/precache-manifest.0000be2fea79dc5279cc0f198318a0c7.js",
+    "service-worker.js": "/utra-nation-react/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/utra-nation-react/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.b1b3f7f4.chunk.js.LICENSE.txt": "/utra-nation-react/static/js/2.b1b3f7f4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.114cf7b8.js",
+    "static/js/2.b1b3f7f4.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.3b5aa576.chunk.js"
+  ]
+}
